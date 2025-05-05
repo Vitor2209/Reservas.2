@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservas - Fine Cut Butchers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="back-button" onclick="voltar()">← Voltar</button>
+  <h1>Lista de Reservas</h1>
+
+  <div class="filtros">
+    <input type="text" id="filtroNome" placeholder="Filtrar por nome" oninput="carregarReservas()">
+    <input type="date" id="filtroData" oninput="carregarReservas()">
+  </div>
+
+  <div id="listaReservas"></div>
+
+  <script src="reservas.js"></script>
+</body>
+</html>
